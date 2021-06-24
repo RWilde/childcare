@@ -1,7 +1,7 @@
 import { graphql, PageRendererProps } from "gatsby"
 import React from "react"
 import styled from "styled-components"
-import { Bio } from "../components/bio"
+import { Landing } from "../components/Landing"
 import { Layout } from "../components/layout"
 import { FadeLink } from "../components/link"
 import { SEO } from "../components/seo"
@@ -51,7 +51,7 @@ const BlogPostTemplate = (props: Props) => {
       <Date>{frontmatter.date}</Date>
       <div dangerouslySetInnerHTML={{ __html: html }} />
       <Divider />
-      <Bio />
+      <Landing />
       <PostNavigator>
         <li>
           {previous && (
